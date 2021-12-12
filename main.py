@@ -66,14 +66,14 @@ def button(update, context):
 def command_start(update, context: CallbackContext):
     if update.effective_chat.type == "private":
         
-        addme = InlineKeyboardButton(text="🧚 Qrupa əlavə edin!", url="https://t.me/wordsazebot?startgroup=a")
-        sohbet = InlineKeyboardButton(text="💬 Söhbət Qrupumuz", url="https://t.me/grand_villa")
-        oyun = InlineKeyboardButton(text="👾 Oyun Qrupumuz", url="https://t.me/grand_villa")
-        admin = InlineKeyboardButton(text="👨🏻‍💻 Sahib", url="https://t.me/aykhan_s")
+        addme = InlineKeyboardButton(text="🔥 Qrupa əlavə edin!", url="https://t.me/wordsazebot?startgroup=a")
+        sohbet = InlineKeyboardButton(text="⚡ Söhbət Qrupumuz", url="https://t.me/DBMSOHBET")
+        oyun = InlineKeyboardButton(text="👾 Oyun Qrupumuz", url="https://t.me/DBMSOHBET")
+        admin = InlineKeyboardButton(text="👨🏻‍💻 Sahib", url="https://t.me/DBMBOSSdu")
 
         keyboard = [[addme],[sohbet],[oyun],[admin]]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        update.message.reply_text('🇦🇿Şəxsidə oyun olmaz!', reply_to_message_id=True, reply_markup=reply_markup)
+        update.message.reply_text('⭐Şəxsidə oyun olmaz!', reply_to_message_id=True, reply_markup=reply_markup)
     else:
         chat_id = update.message.chat.id
         user_id = update.message.from_user.id
@@ -104,7 +104,7 @@ def set_master(update, context):
 
     game.set_master(update.message.from_user.id)
 
-    show_word_btn = InlineKeyboardButton("👻Sözə bax", callback_data='show_word')
+    show_word_btn = InlineKeyboardButton("💫Sözə bax", callback_data='show_word')
     change_word_btn = InlineKeyboardButton("♻️Sözü dəyiş", callback_data='change_word')
 
     keyboard = [[show_word_btn], [change_word_btn]]
